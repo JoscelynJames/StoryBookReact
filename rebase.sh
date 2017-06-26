@@ -28,3 +28,11 @@ git push -u origin cart-05-calculate-total --force-with-lease
 git checkout cart-06-deploy
 git rebase cart-05-calculate-total
 git push -u origin cart-06-deploy --force-with-lease
+
+git checkout timer
+git rebase master
+git push -u origin timer --force-with-lease
+
+git checkout todo-app
+git rebase master
+git push -u origin todo-app --force-with-lease
