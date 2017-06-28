@@ -41,6 +41,10 @@ git checkout cart-10-fetch-items
 git rebase cart-06-deploy
 git push -u origin cart-10-fetch-items --force-with-lease
 
+git checkout cart-11-post-item
+git rebase cart-10-fetch-items
+git push -u origin cart-11-post-item --force-with-lease
+
 # --- TESTS
 
 git checkout test-01-failing
