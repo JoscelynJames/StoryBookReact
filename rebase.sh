@@ -52,3 +52,6 @@ git rebase test-01-failing
 export CI=true
 yarn test
 git push -u origin test-02-passing --force-with-lease
+
+git checkout master
+echo "Done!"
