@@ -40,3 +40,14 @@ git push -u origin todo-app --force-with-lease
 git checkout cart-10-fetch-items
 git rebase cart-06-deploy
 git push -u origin cart-10-fetch-items --force-with-lease
+
+# --- TESTS
+
+git checkout test-01-failing
+git rebase master
+git push -u origin test-01-failing --force-with-lease
+
+git checkout test-02-passing
+git rebase test-01-failing
+set CI=true && yarn test
+git push -u origin test-02-passing --force-with-lease
