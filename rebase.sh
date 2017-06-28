@@ -36,3 +36,7 @@ git push -u origin timer --force-with-lease
 git checkout todo-app
 git rebase master
 git push -u origin todo-app --force-with-lease
+
+git checkout cart-10-fetch-items
+git rebase cart-06-deploy
+git push -u origin cart-10-fetch-items --force-with-lease
