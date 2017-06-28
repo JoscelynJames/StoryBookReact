@@ -49,5 +49,6 @@ git push -u origin test-01-failing --force-with-lease
 
 git checkout test-02-passing
 git rebase test-01-failing
-set CI=true && yarn test
+export CI=true
+yarn test
 git push -u origin test-02-passing --force-with-lease
