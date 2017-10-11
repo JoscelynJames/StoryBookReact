@@ -5,38 +5,22 @@ import CartFooter from '../components/CartFooter';
 import CartItems from '../components/CartItems';
 import CartItem from '../components/CartItem';
 
+class ShoppingCart extends React.Component {
+  constructor(props) {
+		super(props);
 
-const ShoppingCart = props => ( 
-		<div>
-			<CartHeader />
-			<CartItems />
-			<CartItem />
-			<CartFooter copywrite={props.copywrite}/>
-		</div>
-);
-
-
-// dont use for this example. 
-// A statless component is faster is for rendering simple(not much logic) JSX/HTML
-
-// class ShoppingCart extends React.Component {
-//   constructor(props) {
-// 		super(props);
-
-// 		this.state = {
-
-// 		};
-// 	}
-// 	render() {
-// 		return ( 
-// 			<div>
-// 				<CartHeader />
-// 				<CartItems />
-// 				<CartFooter copywrite={this.props.copywrite}/>
-// 			</div>
-// 		)
-// 	};
-// }
+	}
+	render() {
+		return ( 
+			<div>
+				<CartHeader />
+				<CartItems />
+				<CartItem />
+				<CartFooter copywrite={this.props.copywrite}/>
+			</div>
+		)
+	};
+};
 
 export default ShoppingCart;
 	
