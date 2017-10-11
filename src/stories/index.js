@@ -11,8 +11,8 @@ import Timer from '../components/Timer';
 import CartHeader from '../components/CartHeader';
 import CartFooter from '../components/CartFooter';
 import CartItems from '../components/CartItems';
+import CartItem from '../components/CartItem';
 import ShoppingCart from '../components/ShoppingCart';
-
 
 storiesOf('Message', module)
   .add('Hello World', () => <Message text="Hello world" />)
@@ -26,4 +26,5 @@ storiesOf('ShoppingCart', module)
   .add('Header', () => <CartHeader />)
   .add('Footer', () => <CartFooter copywrite="1999"/>)
   .add('Items', () => <CartItems />)
+  .add('Item', () => <CartItem item={ CartItem } />)
   .add('ShoppingCart', () => <ShoppingCart copywrite="2012"/>)

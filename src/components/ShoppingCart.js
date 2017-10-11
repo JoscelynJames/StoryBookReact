@@ -3,12 +3,14 @@ import React from 'react';
 import CartHeader from '../components/CartHeader';
 import CartFooter from '../components/CartFooter';
 import CartItems from '../components/CartItems';
+import CartItem from '../components/CartItem';
 
 
 const ShoppingCart = props => ( 
 		<div>
 			<CartHeader />
 			<CartItems />
+			<CartItem />
 			<CartFooter copywrite={props.copywrite}/>
 		</div>
 );
